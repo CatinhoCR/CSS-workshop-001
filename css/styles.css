@@ -1,0 +1,99 @@
+/* Better Box Model */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Clearfix for float containers/wrappers/whatever */
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Body Site Wrapper */
+body {
+  background-color: #fff;
+}
+
+/* Utility (Re-usable classes) */
+.align-center {
+  text-align: center;
+}
+
+.section-block {
+  padding: 40px 0;
+}
+
+/* Typography */
+.title {
+  font-family: 'Rubik', sans-serif;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* Row */
+.row {
+  width: 100%;
+  padding: 0 30px;
+  background-color: black;
+}
+
+/* ALL cols */
+.col {
+  background-color: aqua;
+  float: left;
+  padding: 20px 15px;
+}
+.col:first-child {
+  margin-left: 0;
+}
+.col:last-child {
+  margin-right: 0;
+}
+
+/* LA TAREA EMPIEZA AQUÍ */
+
+/* Products Section Block */
+.products {
+  background-color: #bbb;
+}
+
+.services {
+
+}
+
+/* Specific cols overrides for sizes & margins */
+
+/* 3 columns */
+.col.one-third {
+  margin: 0 6px;
+  width: 392px;
+}
+
+/* 2 columns */
+.col.one-half {
+
+}
+
+/* 4 Columns */
+.col.one-fourth {
+
+}
+
+/* 6 Columns */
+.col.one-sixth {
+
+}
